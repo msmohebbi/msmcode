@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:msmcode/project_data.dart';
 import 'package:msmcode/skill_compact.dart';
@@ -58,7 +57,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                         width: 1,
                         color: Theme.of(context).hintColor.withAlpha(100),
                       ),
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
@@ -108,7 +107,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                         width: 1,
                         color: Theme.of(context).hintColor.withAlpha(100),
                       ),
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -154,7 +153,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                         width: 1,
                         color: Theme.of(context).hintColor.withAlpha(100),
                       ),
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -205,7 +204,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                         width: 1,
                         color: Theme.of(context).hintColor.withAlpha(100),
                       ),
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -274,7 +273,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                         width: 1,
                         color: Theme.of(context).hintColor.withAlpha(100),
                       ),
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(

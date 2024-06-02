@@ -176,7 +176,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                         children: [
                           ElevatedButton(
                             style: ButtonStyle(
-                              shape: MaterialStatePropertyAll(
+                              shape: WidgetStatePropertyAll(
                                 RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),
                                 ),
