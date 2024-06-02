@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:msmcode/project_compact.dart';
+import 'package:msmcode/project_data.dart';
+import 'package:msmcode/project_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_strategy/url_strategy.dart';
 
@@ -28,7 +30,29 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (ctx) => const MyHomePage(),
       },
+      onGenerateRoute: (route) {
+        if (route.name != null) {
+          var finalRouteName = route.name!;
+          if (finalRouteName.endsWith("/")) {
+            finalRouteName =
+                finalRouteName.substring(0, finalRouteName.length - 2);
+          }
 
+          var parts = finalRouteName.split("/").length;
+          if (parts == 3 && finalRouteName.split("/")[1] == "projects") {
+            var destin = finalRouteName.split("/")[2];
+            return MaterialPageRoute<void>(
+              settings: route,
+              builder: (BuildContext context) => ProjectScreen(slug: destin),
+            );
+          }
+        }
+        return MaterialPageRoute(
+          builder: (context) {
+            return const MyHomePage();
+          },
+        );
+      },
       // home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -332,43 +356,43 @@ class MyHomePageState extends State<MyHomePage> {
                     children: [
                       SkillCompact(
                         skill: "Flutter",
-                        image: "assets/images/skills/fluttericon.png",
+                        image: "assets/images/skills/flutter.png",
                       ),
                       SkillCompact(
                         skill: "Firebase",
-                        image: "assets/images/skills/firebaseicon.png",
+                        image: "assets/images/skills/firebase.png",
                       ),
                       SkillCompact(
                         skill: "Django",
-                        image: "assets/images/skills/djangoicon.png",
+                        image: "assets/images/skills/django.png",
                       ),
                       SkillCompact(
                         skill: "Django REST Framework",
-                        image: "assets/images/skills/djangoresticon.png",
+                        image: "assets/images/skills/djangorest.png",
                       ),
                       SkillCompact(
                         skill: "FastAPI",
-                        image: "assets/images/skills/fastapiicon.png",
+                        image: "assets/images/skills/fastapi.png",
                       ),
                       SkillCompact(
                         skill: "NGINX",
-                        image: "assets/images/skills/nginxicon.png",
+                        image: "assets/images/skills/nginx.png",
                       ),
                       SkillCompact(
                         skill: "PsotgreSQL",
-                        image: "assets/images/skills/postgresicon.png",
+                        image: "assets/images/skills/postgres.png",
                       ),
                       SkillCompact(
                         skill: "MySQL",
-                        image: "assets/images/skills/mysqlicon.png",
+                        image: "assets/images/skills/mysql.png",
                       ),
                       SkillCompact(
                         skill: "Docker",
-                        image: "assets/images/skills/dockericon.png",
+                        image: "assets/images/skills/docker.png",
                       ),
                       SkillCompact(
                         skill: "Git",
-                        image: "assets/images/skills/giticon.png",
+                        image: "assets/images/skills/git.png",
                       ),
                     ],
                   ),
@@ -393,166 +417,13 @@ class MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 const SizedBox(
-                  height: kToolbarHeight * 0.2,
+                  height: kToolbarHeight * 0.1,
                 ),
-                const ProjectCompact(
-                  name: "UniDooni",
-                  platforms: "Android, iOS, Web",
-                  icon: "assets/images/projects/unidooniicon.png",
-                  techs: 'Flutter - Django Rest Framework - PostgreSQL',
-                  about:
-                      'Academy Course Finder & Consulter Applications and WebApp',
-                  start: '08/2022',
-                  end: 'Present',
-                ),
+                ...allProjects.map((e) => ProjectCompact(
+                      project: e,
+                    )),
                 const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Daric",
-                  platforms: "Android, iOS",
-                  icon: "assets/images/projects/daricicon.png",
-                  techs: 'Flutter - Firebase',
-                  about: 'Exchange Application',
-                  start: '06/2023',
-                  end: 'Present',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "PVFans",
-                  platforms: "Android, iOS",
-                  icon: "assets/images/projects/pvicon.png",
-                  techs: 'Flutter - Firebase',
-                  about: 'Social Media, Dating and Market Place Application',
-                  start: '09/2023',
-                  end: 'Present',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Novin Taxi",
-                  platforms: "Android, iOS, Web",
-                  icon: "assets/images/projects/novintaxiicon.png",
-                  techs: 'Flutter - Django Rest Framwork - PostgreSQL',
-                  about:
-                      'User & Driver Application for Inter-city Transportation',
-                  start: '06/2023',
-                  end: 'Present',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Secret TV",
-                  platforms: "Android, iOS, Web",
-                  icon: "assets/images/projects/secrettvicon.png",
-                  techs: 'Flutter - Django Rest Framework - PostgreSQL',
-                  about:
-                      'Social Media about Motivation and Coaching ,Applications and WebApp',
-                  start: '06/2022',
-                  end: '09/2022',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Shakib Learn",
-                  platforms: "Android, iOS, Web",
-                  icon: "assets/images/projects/shakiblearnicon.png",
-                  techs: 'Flutter - Django Rest Framework - MySQL',
-                  about: 'E-Learning Cross-Platform Applications and WebApp',
-                  start: '12/2021',
-                  end: '05/2022',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "JooPeg",
-                  platforms: "Android, iOS",
-                  icon: "assets/images/projects/joopegicon.png",
-                  techs: 'Flutter - Firebase',
-                  about: 'Social Media Application',
-                  start: '4/2023',
-                  end: 'Present',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Behnasr",
-                  platforms: "Android",
-                  icon: "assets/images/projects/behnasricon.png",
-                  techs: 'Flutter',
-                  about: 'OCR (Image to Text) Application',
-                  start: '07/2023',
-                  end: '09/2023',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Sorena",
-                  platforms: "Android",
-                  icon: "assets/images/projects/sorenaicon.png",
-                  techs: 'Flutter',
-                  about: 'Organizing proples in groups and contact them',
-                  start: '04/2022',
-                  end: '05/2022',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Delif",
-                  platforms: "Android, iOS, Web",
-                  icon: "assets/images/projects/delificon.png",
-                  techs: 'Flutter - Django Rest Framework - MySQL',
-                  about: 'Logestic and Market Place Apllications and WebApp',
-                  start: '01/2021',
-                  end: '10/2021',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Sudus",
-                  platforms: "Android, iOS",
-                  icon: "assets/images/projects/sudus.png",
-                  techs: 'Flutter - Firebase',
-                  about: 'Cryptocurrency and Copy-Trading Platform',
-                  start: '03/2020',
-                  end: '9/2020',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "Dr Mohsen Valizadeh",
-                  platforms: "Web",
-                  icon: "assets/images/projects/drmvicon.png",
-                  techs: 'Flutter - Django Rest Framework',
-                  about: 'Appointment schedule & Info For Medical Clinic',
-                  start: '04/2023',
-                  end: '05/2023',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
-                ),
-                const ProjectCompact(
-                  name: "DGAPco",
-                  platforms: "Web",
-                  icon: "assets/images/projects/dgapicon.png",
-                  techs: 'Django - Postgresql - Bootstrap - jQuery',
-                  about: 'E-commerce Website & Intera-Company Website',
-                  start: '02/2019',
-                  end: '07/2019',
-                ),
-                const SizedBox(
-                  height: kToolbarHeight * 0.2,
+                  height: kToolbarHeight * 0.1,
                 ),
               ],
             ),

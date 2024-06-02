@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:msmcode/project_model.dart';
 
 class ProjectCompact extends StatefulWidget {
   const ProjectCompact({
     super.key,
-    required this.name,
-    required this.platforms,
-    required this.icon,
-    required this.techs,
-    required this.about,
-    required this.start,
-    required this.end,
+    required this.project,
   });
-  final String name;
-  final String platforms;
-  final String icon;
-  final String techs;
-  final String about;
-  final String start;
-  final String end;
+  final AppProject project;
+
   @override
   State<ProjectCompact> createState() => _ProjectCompactState();
 }
@@ -36,6 +26,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
     }
 
     return Container(
+      margin: const EdgeInsets.symmetric(vertical: kToolbarHeight * 0.1),
       width: widthPixFixed - ((widthPixFixed - widthPix) / 2),
       padding: const EdgeInsets.symmetric(
           vertical: kToolbarHeight * 0.1, horizontal: kToolbarHeight * 0.2),
@@ -66,7 +57,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                           : kToolbarHeight * 3,
                       child: Image(
                         image: ExactAssetImage(
-                          widget.icon,
+                          widget.project.iconPath,
                         ),
                         fit: BoxFit.contain,
                       ),
@@ -80,7 +71,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                     child: Column(
                       children: [
                         Text(
-                          widget.name,
+                          widget.project.name,
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -104,7 +95,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                         ),
                         const SizedBox(height: kToolbarHeight * 0.2),
                         Text(
-                          widget.platforms,
+                          widget.project.platforms.join(" - "),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -124,7 +115,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                         ),
                         const SizedBox(height: kToolbarHeight * 0.2),
                         Text(
-                          widget.about,
+                          widget.project.about,
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -144,7 +135,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                         ),
                         const SizedBox(height: kToolbarHeight * 0.2),
                         Text(
-                          widget.techs,
+                          widget.project.techs.values.join(" - "),
                           textAlign: TextAlign.center,
                           softWrap: true,
                           overflow: TextOverflow.fade,
@@ -166,7 +157,7 @@ class _ProjectCompactState extends State<ProjectCompact> {
                         ),
                         const SizedBox(height: kToolbarHeight * 0.2),
                         Text(
-                          "${widget.start} - ${widget.end}",
+                          "${widget.project.start} - ${widget.project.end}",
                           textAlign: TextAlign.center,
                           softWrap: true,
                           overflow: TextOverflow.fade,
@@ -191,7 +182,11 @@ class _ProjectCompactState extends State<ProjectCompact> {
                                 ),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).pushNamed(
+                                '/projects/${widget.project.slug}',
+                              );
+                            },
                             child: const Row(
                               children: [
                                 Text("View More"),
