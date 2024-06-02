@@ -28,293 +28,301 @@ class _ProjectScreenState extends State<ProjectScreen> {
     }
     var cProject =
         allProjects.firstWhere((element) => element.slug == widget.slug);
-    return Scaffold(
-      appBar: AppBar(
-        surfaceTintColor: Colors.transparent,
-        title: Text(cProject.name),
-      ),
-      backgroundColor: Theme.of(context).hintColor.withAlpha(10),
-      body: SingleChildScrollView(
-        child: Flex(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          direction: isHorizontal ? Axis.horizontal : Axis.vertical,
-          children: [
-            Expanded(
-              flex: isHorizontal ? 1 : 0,
-              child: Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.01,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.02,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 1,
-                        color: Theme.of(context).hintColor.withAlpha(100),
+    return Container(
+      color: Theme.of(context).colorScheme.surface,
+      child: Scaffold(
+        appBar: AppBar(
+          surfaceTintColor: Colors.transparent,
+          title: Text(cProject.name),
+        ),
+        backgroundColor: Theme.of(context).hintColor.withAlpha(10),
+        body: SingleChildScrollView(
+          child: Flex(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            direction: isHorizontal ? Axis.horizontal : Axis.vertical,
+            children: [
+              Expanded(
+                flex: isHorizontal ? 1 : 0,
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.01,
                       ),
-                      color: Theme.of(context).colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Image.asset(
-                          cProject.iconPath,
-                          width: 150,
-                        ),
-                        SizedBox(width: widthPix * 0.02),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              cProject.name,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: fontDelta + 20,
-                              ),
-                            ),
-                            SizedBox(height: widthPix * 0.02),
-                            Text(
-                              'Mohammad Saeid Mohebbi',
-                              style: TextStyle(
-                                fontSize: fontDelta + 18,
-                                color:
-                                    Theme.of(context).hintColor.withAlpha(150),
-                              ),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.01,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.02,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 1,
-                        color: Theme.of(context).hintColor.withAlpha(100),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.02,
                       ),
-                      color: Theme.of(context).colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Images',
-                              style: TextStyle(
-                                fontSize: fontDelta + 18,
-                                color:
-                                    Theme.of(context).hintColor.withAlpha(150),
-                              ),
-                            ),
-                          ],
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 1,
+                          color: Theme.of(context).hintColor.withAlpha(100),
                         ),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Column(
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            cProject.iconPath,
+                            width: 150,
+                          ),
+                          SizedBox(width: widthPix * 0.02),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.min,
                             children: [
-                              ...cProject.imageList.map(
+                              Text(
+                                cProject.name,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: fontDelta + 20,
+                                ),
+                              ),
+                              SizedBox(height: widthPix * 0.02),
+                              Text(
+                                'Mohammad Saeid Mohebbi',
+                                style: TextStyle(
+                                  fontSize: fontDelta + 18,
+                                  color: Theme.of(context)
+                                      .hintColor
+                                      .withAlpha(150),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.01,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.02,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 1,
+                          color: Theme.of(context).hintColor.withAlpha(100),
+                        ),
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Images',
+                                style: TextStyle(
+                                  fontSize: fontDelta + 18,
+                                  color: Theme.of(context)
+                                      .hintColor
+                                      .withAlpha(150),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Column(
+                              children: [
+                                ...cProject.imageList.map(
+                                  (e) {
+                                    return Image.asset(e);
+                                  },
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.01,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.02,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 1,
+                          color: Theme.of(context).hintColor.withAlpha(100),
+                        ),
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Introduction',
+                                style: TextStyle(
+                                  fontSize: fontDelta + 18,
+                                  color: Theme.of(context)
+                                      .hintColor
+                                      .withAlpha(150),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: widthPix * 0.01,
+                          ),
+                          Text(
+                            cProject.introduction,
+                            style: TextStyle(
+                              fontSize: fontDelta + 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: isHorizontal ? 1 : 0,
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.01,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.02,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 1,
+                          color: Theme.of(context).hintColor.withAlpha(100),
+                        ),
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Download',
+                                style: TextStyle(
+                                  fontSize: fontDelta + 18,
+                                  color: Theme.of(context)
+                                      .hintColor
+                                      .withAlpha(150),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: widthPix * 0.01,
+                          ),
+                          Wrap(
+                            spacing: widthPix * 0.01,
+                            runSpacing: widthPix * 0.01,
+                            children: [
+                              ...cProject.download.map(
                                 (e) {
-                                  return Image.asset(e);
+                                  return InkWell(
+                                    onTap: () {
+                                      launchUrl(
+                                        Uri.parse(
+                                          e['link']!,
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      height: widthPix * 0.1,
+                                      width: widthPix * 0.33,
+                                      child: Image.asset(
+                                        "assets/images/badges/${e['slug']}_dark.png",
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                  );
                                 },
                               )
                             ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.01,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widthPix * 0.02,
+                        vertical: widthPix * 0.02,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 1,
+                          color: Theme.of(context).hintColor.withAlpha(100),
+                        ),
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Technologies',
+                                style: TextStyle(
+                                  fontSize: fontDelta + 18,
+                                  color: Theme.of(context)
+                                      .hintColor
+                                      .withAlpha(150),
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.01,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.02,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 1,
-                        color: Theme.of(context).hintColor.withAlpha(100),
-                      ),
-                      color: Theme.of(context).colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Introduction',
-                              style: TextStyle(
-                                fontSize: fontDelta + 18,
-                                color:
-                                    Theme.of(context).hintColor.withAlpha(150),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: widthPix * 0.01,
-                        ),
-                        Text(
-                          cProject.introduction,
-                          style: TextStyle(
-                            fontSize: fontDelta + 18,
+                          SizedBox(
+                            height: widthPix * 0.01,
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              flex: isHorizontal ? 1 : 0,
-              child: Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.01,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.02,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 1,
-                        color: Theme.of(context).hintColor.withAlpha(100),
+                          Wrap(
+                            spacing: widthPix * 0.01,
+                            runSpacing: widthPix * 0.01,
+                            children: [
+                              ...cProject.techs.entries.map(
+                                (e) {
+                                  return SkillCompact(
+                                    image: "assets/images/skills/${e.key}.png",
+                                    skill: e.value,
+                                  );
+                                },
+                              )
+                            ],
+                          )
+                        ],
                       ),
-                      color: Theme.of(context).colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Download',
-                              style: TextStyle(
-                                fontSize: fontDelta + 18,
-                                color:
-                                    Theme.of(context).hintColor.withAlpha(150),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: widthPix * 0.01,
-                        ),
-                        Wrap(
-                          spacing: widthPix * 0.01,
-                          runSpacing: widthPix * 0.01,
-                          children: [
-                            ...cProject.download.map(
-                              (e) {
-                                return InkWell(
-                                  onTap: () {
-                                    launchUrl(
-                                      Uri.parse(
-                                        e['link']!,
-                                      ),
-                                    );
-                                  },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    height: widthPix * 0.1,
-                                    width: widthPix * 0.33,
-                                    child: Image.asset(
-                                      "assets/images/badges/${e['slug']}_dark.png",
-                                      fit: BoxFit.contain,
-                                    ),
-                                  ),
-                                );
-                              },
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.01,
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: widthPix * 0.02,
-                      vertical: widthPix * 0.02,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 1,
-                        color: Theme.of(context).hintColor.withAlpha(100),
-                      ),
-                      color: Theme.of(context).colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Technologies',
-                              style: TextStyle(
-                                fontSize: fontDelta + 18,
-                                color:
-                                    Theme.of(context).hintColor.withAlpha(150),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: widthPix * 0.01,
-                        ),
-                        Wrap(
-                          spacing: widthPix * 0.01,
-                          runSpacing: widthPix * 0.01,
-                          children: [
-                            ...cProject.techs.entries.map(
-                              (e) {
-                                return SkillCompact(
-                                  image: "assets/images/skills/${e.key}.png",
-                                  skill: e.value,
-                                );
-                              },
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

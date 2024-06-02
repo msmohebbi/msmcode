@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:msmcode/project_compact.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
           colorScheme: ColorScheme.fromSeed(
         seedColor: Colors.tealAccent,
+        surface: Colors.white,
       )),
       title: 'MSMCode',
       routes: {
@@ -54,6 +56,14 @@ class MyApp extends StatelessWidget {
         );
       },
       // home: MyHomePage(),
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown
+        },
+      ),
       debugShowCheckedModeBanner: false,
     );
   }

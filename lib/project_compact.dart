@@ -41,7 +41,10 @@ class _ProjectCompactState extends State<ProjectCompact> {
           borderRadius: BorderRadius.circular(20),
           child: InkWell(
             borderRadius: BorderRadius.circular(20),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context)
+                  .pushNamed('/projects/${widget.project.slug}');
+            },
             child: Padding(
               padding: const EdgeInsets.all(kToolbarHeight * 0.2),
               child: Flex(
