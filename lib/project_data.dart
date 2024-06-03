@@ -21,7 +21,14 @@ var allProjects = [
         '''We have provided a large world in one place for the information students need to make informed decisions about their studies. From the introduction and comparison of all fields, universities, cities and countries of the world in one place, to the opportunity of scholarships and personal consultations, communication and hostel reservations.
 We are committed to helping everyone in the world find their path to success quickly, accurately and in a personalized way.''',
     start: '08/2022',
-    imageList: [],
+    imageList: [
+      'assets/images/projects/unidooni/1.jpeg',
+      'assets/images/projects/unidooni/2.jpeg',
+      'assets/images/projects/unidooni/3.jpeg',
+      'assets/images/projects/unidooni/4.jpeg',
+      'assets/images/projects/unidooni/5.jpeg',
+      'assets/images/projects/unidooni/6.jpeg',
+    ],
     download: [
       {
         'slug': 'bazaar',

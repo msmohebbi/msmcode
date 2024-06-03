@@ -128,18 +128,72 @@ class _ProjectScreenState extends State<ProjectScreen> {
                               ),
                             ],
                           ),
+                          const SizedBox(height: kToolbarHeight * 0.2),
                           SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
-                            child: Column(
+                            child: Row(
                               children: [
                                 ...cProject.imageList.map(
                                   (e) {
-                                    return Image.asset(e);
+                                    return Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: kToolbarHeight * 0.1,
+                                      ),
+                                      child: InkWell(
+                                        onTap: () {
+                                          showDialog(
+                                            context: context,
+                                            barrierDismissible: true,
+                                            builder: (context) {
+                                              return Dialog(
+                                                backgroundColor:
+                                                    Theme.of(context).cardColor,
+                                                insetPadding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 8),
+                                                child: ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(4),
+                                                  child: IntrinsicHeight(
+                                                    child: InteractiveViewer(
+                                                      child: Image.asset(
+                                                        e,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                          );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                            border: Border.all(
+                                              color: Theme.of(context)
+                                                  .hintColor
+                                                  .withAlpha(100),
+                                            ),
+                                          ),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                            child: Image.asset(
+                                              e,
+                                              height: heightPix * 0.5,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    );
                                   },
                                 )
                               ],
                             ),
                           ),
+                          const SizedBox(height: kToolbarHeight * 0.2),
                         ],
                       ),
                     ),

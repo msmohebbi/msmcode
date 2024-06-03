@@ -78,6 +78,7 @@ flutter:
   assets:
   # icons
     - assets/images/projects/
+    - assets/images/projects/unidooni/
     - assets/images/skills/
     - assets/images/badges/
 
