@@ -1,16 +1,3 @@
-# msmcode
+# MSMCode
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Hello! I'm Mohammad Saeid Mohebbi, and this is my digital portfolio, hosted at msmcode.ir. This website showcases my professional journey, skills, and projects, offering a glimpse into my experience and expertise. Whether you're a potential employer, collaborator, or just curious, I hope you'll find the information here insightful and engaging. Feel free to explore and reach out if you have any questions or opportunities to discuss!
