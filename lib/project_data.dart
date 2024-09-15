@@ -3,6 +3,47 @@ import 'package:msmcode/project_model.dart';
 var allProjects = [
   AppProject(
     id: '1',
+    name: 'Vibogram',
+    slug: 'vibogram',
+    platforms: [
+      'Android',
+      'iOS',
+    ],
+    iconPath: 'assets/images/projects/vibogramicon.png',
+    techs: {
+      'Flutter': 'Flutter',
+      'djangorest': 'Django Rest Framework',
+      'postgres': 'PostgreSQL',
+      'Azure': 'Azure',
+    },
+    about: 'Social Media, Dating and Market Place Application',
+    introduction: 'Social Media, Dating and Market Place Application',
+    start: '09/2023',
+    end: 'Present',
+    imageList: [
+      'assets/images/projects/vibogram/1.png',
+      'assets/images/projects/vibogram/2.png',
+      'assets/images/projects/vibogram/3.png',
+      'assets/images/projects/vibogram/4.png',
+      'assets/images/projects/vibogram/5.png',
+      'assets/images/projects/vibogram/6.png',
+    ],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=ca.vibogram.vibogram',
+      },
+      {
+        'slug': 'appstore',
+        'name': 'App Store',
+        'link': 'https://apps.apple.com/sa/app/vibogram/id6553969414',
+      },
+    ],
+  ),
+  AppProject(
+    id: '2',
     name: 'UniDooni',
     slug: 'unidooni',
     platforms: [
@@ -57,47 +98,6 @@ We are committed to helping everyone in the world find their path to success qui
       },
     ],
     end: '06/2024',
-  ),
-  AppProject(
-    id: '2',
-    name: 'Vibogram',
-    slug: 'vibogram',
-    platforms: [
-      'Android',
-      'iOS',
-    ],
-    iconPath: 'assets/images/projects/vibogramicon.png',
-    techs: {
-      'Flutter': 'Flutter',
-      'djangorest': 'Django Rest Framework',
-      'postgres': 'PostgreSQL',
-      'Azure': 'Azure',
-    },
-    about: 'Social Media, Dating and Market Place Application',
-    introduction: 'Social Media, Dating and Market Place Application',
-    start: '09/2023',
-    end: 'Present',
-    imageList: [
-      'assets/images/projects/vibogram/1.png',
-      'assets/images/projects/vibogram/2.png',
-      'assets/images/projects/vibogram/3.png',
-      'assets/images/projects/vibogram/4.png',
-      'assets/images/projects/vibogram/5.png',
-      'assets/images/projects/vibogram/6.png',
-    ],
-    download: [
-      {
-        'slug': 'googleplay',
-        'name': 'Google Play',
-        'link':
-            'https://play.google.com/store/apps/details?id=ca.vibogram.vibogram',
-      },
-      {
-        'slug': 'appstore',
-        'name': 'App Store',
-        'link': 'https://apps.apple.com/sa/app/vibogram/id6553969414',
-      },
-    ],
   ),
   AppProject(
     id: '3',
@@ -373,46 +373,29 @@ We are committed to helping everyone in the world find their path to success qui
     ],
     download: [],
   ),
-  AppProject(
-    id: '9',
-    name: 'Sorena',
-    slug: 'sorena',
-    platforms: [
-      'Android',
-    ],
-    iconPath: 'assets/images/projects/sorenaicon.png',
-    techs: {
-      'flutter': 'Flutter',
-    },
-    about: 'Organizing proples in groups and contact them',
-    introduction: 'Organizing proples in groups and contact them',
-    start: '04/2022',
-    end: '05/2022',
-    imageList: [],
-    download: [],
-  ),
-  AppProject(
-    id: '10',
-    name: 'Delif',
-    slug: 'delif',
-    platforms: [
-      'Android',
-      'iOS',
-      'Web',
-    ],
-    iconPath: 'assets/images/projects/delificon.png',
-    techs: {
-      'flutter': 'Flutter',
-      'djangorest': 'Django Rest Framework',
-      'mysql': 'MySQL',
-    },
-    about: 'Logestic and Market Place Apllications and WebApp',
-    introduction: 'Logestic and Market Place Apllications and WebApp',
-    start: '01/2021',
-    end: '10/2021',
-    imageList: [],
-    download: [],
-  ),
+
+  // AppProject(
+  //   id: '10',
+  //   name: 'Delif',
+  //   slug: 'delif',
+  //   platforms: [
+  //     'Android',
+  //     'iOS',
+  //     'Web',
+  //   ],
+  //   iconPath: 'assets/images/projects/delificon.png',
+  //   techs: {
+  //     'flutter': 'Flutter',
+  //     'djangorest': 'Django Rest Framework',
+  //     'mysql': 'MySQL',
+  //   },
+  //   about: 'Logestic and Market Place Apllications and WebApp',
+  //   introduction: 'Logestic and Market Place Apllications and WebApp',
+  //   start: '01/2021',
+  //   end: '10/2021',
+  //   imageList: [],
+  //   download: [],
+  // ),
   AppProject(
     id: '12',
     name: 'Dr Mohsen Valizadeh',
@@ -429,7 +412,37 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'Appointment schedule & Info For Medical Clinic',
     start: '04/2023',
     end: '05/2023',
-    imageList: [],
+    imageList: [
+      'assets/images/projects/drm/1.png',
+    ],
+    download: [
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://drmohsenvalizadeh.ir/',
+      },
+    ],
+  ),
+  AppProject(
+    id: '9',
+    name: 'Sorena',
+    slug: 'sorena',
+    platforms: [
+      'Android',
+    ],
+    iconPath: 'assets/images/projects/sorenaicon.png',
+    techs: {
+      'flutter': 'Flutter',
+    },
+    about: 'Organizing proples in groups and contact them',
+    introduction: 'Organizing proples in groups and contact them',
+    start: '04/2022',
+    end: '05/2022',
+    imageList: [
+      'assets/images/projects/sorena/1.png',
+      'assets/images/projects/sorena/2.png',
+      'assets/images/projects/sorena/3.png',
+    ],
     download: [],
   ),
   AppProject(
@@ -450,7 +463,19 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'E-commerce Website & Intera-Company Website',
     start: '02/2019',
     end: '07/2019',
-    imageList: [],
-    download: [],
+    imageList: [
+      'assets/images/projects/dgap/1.png',
+      'assets/images/projects/dgap/2.png',
+      'assets/images/projects/dgap/3.png',
+      'assets/images/projects/dgap/4.png',
+      'assets/images/projects/dgap/5.png',
+    ],
+    download: [
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://dgapco.ir/',
+      },
+    ],
   ),
 ];

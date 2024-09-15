@@ -349,7 +349,7 @@ class MyHomePageState extends State<MyHomePage> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                   child: Text(
-                    'SKILLS',
+                    'SKILLS (11)',
                     textAlign: TextAlign.center,
                     softWrap: false,
                     style: TextStyle(
@@ -419,7 +419,7 @@ class MyHomePageState extends State<MyHomePage> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                   child: Text(
-                    'PROJECTS',
+                    'PROJECTS (11)',
                     textAlign: TextAlign.center,
                     softWrap: false,
                     overflow: TextOverflow.visible,
