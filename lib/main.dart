@@ -349,7 +349,7 @@ class MyHomePageState extends State<MyHomePage> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                   child: Text(
-                    'SKILLS (11)',
+                    'SKILLS (14)',
                     textAlign: TextAlign.center,
                     softWrap: false,
                     style: TextStyle(
@@ -381,6 +381,10 @@ class MyHomePageState extends State<MyHomePage> {
                         image: "assets/images/skills/djangorest.png",
                       ),
                       SkillCompact(
+                        skill: "Python",
+                        image: "assets/images/skills/python.png",
+                      ),
+                      SkillCompact(
                         skill: "FastAPI",
                         image: "assets/images/skills/fastapi.png",
                       ),
@@ -389,11 +393,19 @@ class MyHomePageState extends State<MyHomePage> {
                         image: "assets/images/skills/azure.png",
                       ),
                       SkillCompact(
+                        skill: "AWS",
+                        image: "assets/images/skills/aws.png",
+                      ),
+                      SkillCompact(
                         skill: "NGINX",
                         image: "assets/images/skills/nginx.png",
                       ),
                       SkillCompact(
-                        skill: "PsotgreSQL",
+                        skill: "MongoDB",
+                        image: "assets/images/skills/mongodb.png",
+                      ),
+                      SkillCompact(
+                        skill: "PostgreSQL",
                         image: "assets/images/skills/postgres.png",
                       ),
                       SkillCompact(

@@ -21,12 +21,12 @@ var allProjects = [
     start: '09/2023',
     end: 'Present',
     imageList: [
-      'assets/images/projects/vibogram/1.png',
-      'assets/images/projects/vibogram/2.png',
-      'assets/images/projects/vibogram/3.png',
-      'assets/images/projects/vibogram/4.png',
-      'assets/images/projects/vibogram/5.png',
-      'assets/images/projects/vibogram/6.png',
+      'assets/images/projects/vibogram/1.jpg',
+      'assets/images/projects/vibogram/2.jpg',
+      'assets/images/projects/vibogram/3.jpg',
+      'assets/images/projects/vibogram/4.jpg',
+      'assets/images/projects/vibogram/5.jpg',
+      'assets/images/projects/vibogram/6.jpg',
     ],
     download: [
       {
@@ -63,12 +63,12 @@ var allProjects = [
 We are committed to helping everyone in the world find their path to success quickly, accurately and in a personalized way.''',
     start: '08/2022',
     imageList: [
-      'assets/images/projects/unidooni/1.jpeg',
-      'assets/images/projects/unidooni/2.jpeg',
-      'assets/images/projects/unidooni/3.jpeg',
-      'assets/images/projects/unidooni/4.jpeg',
-      'assets/images/projects/unidooni/5.jpeg',
-      'assets/images/projects/unidooni/6.jpeg',
+      'assets/images/projects/unidooni/1.jpg',
+      'assets/images/projects/unidooni/2.jpg',
+      'assets/images/projects/unidooni/3.jpg',
+      'assets/images/projects/unidooni/4.jpg',
+      'assets/images/projects/unidooni/5.jpg',
+      'assets/images/projects/unidooni/6.jpg',
     ],
     download: [
       {
@@ -117,11 +117,11 @@ We are committed to helping everyone in the world find their path to success qui
     start: '06/2023',
     end: 'Present',
     imageList: [
-      'assets/images/projects/daric/1.png',
-      'assets/images/projects/daric/2.png',
-      'assets/images/projects/daric/3.png',
-      'assets/images/projects/daric/4.png',
-      'assets/images/projects/daric/5.png',
+      'assets/images/projects/daric/1.jpg',
+      'assets/images/projects/daric/2.jpg',
+      'assets/images/projects/daric/3.jpg',
+      'assets/images/projects/daric/4.jpg',
+      'assets/images/projects/daric/5.jpg',
     ],
     download: [
       {
@@ -156,13 +156,13 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'User & Driver Application for Inter-city Transportation',
     start: '06/2023',
     imageList: [
-      'assets/images/projects/novintaxi/1.png',
-      'assets/images/projects/novintaxi/2.png',
-      'assets/images/projects/novintaxi/3.png',
-      'assets/images/projects/novintaxi/4.png',
-      'assets/images/projects/novintaxi/5.png',
-      'assets/images/projects/novintaxi/6.png',
-      'assets/images/projects/novintaxi/7.png',
+      'assets/images/projects/novintaxi/1.jpg',
+      'assets/images/projects/novintaxi/2.jpg',
+      'assets/images/projects/novintaxi/3.jpg',
+      'assets/images/projects/novintaxi/4.jpg',
+      'assets/images/projects/novintaxi/5.jpg',
+      'assets/images/projects/novintaxi/6.jpg',
+      'assets/images/projects/novintaxi/7.jpg',
     ],
     download: [
       {
@@ -209,11 +209,11 @@ We are committed to helping everyone in the world find their path to success qui
         'Social Media introduction Motivation and Coaching, Applications and WebApp',
     start: '06/2022',
     imageList: [
-      'assets/images/projects/secrettv/1.jpeg',
-      'assets/images/projects/secrettv/2.jpeg',
-      'assets/images/projects/secrettv/3.jpeg',
-      'assets/images/projects/secrettv/4.jpeg',
-      'assets/images/projects/secrettv/5.jpeg',
+      'assets/images/projects/secrettv/1.jpg',
+      'assets/images/projects/secrettv/2.jpg',
+      'assets/images/projects/secrettv/3.jpg',
+      'assets/images/projects/secrettv/4.jpg',
+      'assets/images/projects/secrettv/5.jpg',
     ],
     download: [
       {
@@ -260,12 +260,12 @@ We are committed to helping everyone in the world find their path to success qui
     start: '12/2021',
     end: '05/2022',
     imageList: [
-      'assets/images/projects/shakiblearn/1.jpeg',
-      'assets/images/projects/shakiblearn/2.jpeg',
-      'assets/images/projects/shakiblearn/3.png',
-      'assets/images/projects/shakiblearn/4.jpeg',
-      'assets/images/projects/shakiblearn/5.jpeg',
-      'assets/images/projects/shakiblearn/6.png',
+      'assets/images/projects/shakiblearn/1.jpg',
+      'assets/images/projects/shakiblearn/2.jpg',
+      'assets/images/projects/shakiblearn/3.jpg',
+      'assets/images/projects/shakiblearn/4.jpg',
+      'assets/images/projects/shakiblearn/5.jpg',
+      'assets/images/projects/shakiblearn/6.jpg',
     ],
     download: [
       {
@@ -341,11 +341,11 @@ We are committed to helping everyone in the world find their path to success qui
     start: '03/2020',
     end: '9/2020',
     imageList: [
-      'assets/images/projects/sudus/1.png',
-      'assets/images/projects/sudus/2.png',
-      'assets/images/projects/sudus/3.png',
-      'assets/images/projects/sudus/4.png',
-      'assets/images/projects/sudus/5.png',
+      'assets/images/projects/sudus/1.jpg',
+      'assets/images/projects/sudus/2.jpg',
+      'assets/images/projects/sudus/3.jpg',
+      'assets/images/projects/sudus/4.jpg',
+      'assets/images/projects/sudus/5.jpg',
     ],
     download: [],
   ),
@@ -365,11 +365,11 @@ We are committed to helping everyone in the world find their path to success qui
     start: '07/2023',
     end: '09/2023',
     imageList: [
-      'assets/images/projects/behnasr/1.png',
-      'assets/images/projects/behnasr/2.png',
-      'assets/images/projects/behnasr/3.png',
-      'assets/images/projects/behnasr/4.png',
-      'assets/images/projects/behnasr/5.png',
+      'assets/images/projects/behnasr/1.jpg',
+      'assets/images/projects/behnasr/2.jpg',
+      'assets/images/projects/behnasr/3.jpg',
+      'assets/images/projects/behnasr/4.jpg',
+      'assets/images/projects/behnasr/5.jpg',
     ],
     download: [],
   ),
@@ -413,7 +413,7 @@ We are committed to helping everyone in the world find their path to success qui
     start: '04/2023',
     end: '05/2023',
     imageList: [
-      'assets/images/projects/drm/1.png',
+      'assets/images/projects/drm/1.jpg',
     ],
     download: [
       {
@@ -439,9 +439,9 @@ We are committed to helping everyone in the world find their path to success qui
     start: '04/2022',
     end: '05/2022',
     imageList: [
-      'assets/images/projects/sorena/1.png',
-      'assets/images/projects/sorena/2.png',
-      'assets/images/projects/sorena/3.png',
+      'assets/images/projects/sorena/1.jpg',
+      'assets/images/projects/sorena/2.jpg',
+      'assets/images/projects/sorena/3.jpg',
     ],
     download: [],
   ),
@@ -464,11 +464,11 @@ We are committed to helping everyone in the world find their path to success qui
     start: '02/2019',
     end: '07/2019',
     imageList: [
-      'assets/images/projects/dgap/1.png',
-      'assets/images/projects/dgap/2.png',
-      'assets/images/projects/dgap/3.png',
-      'assets/images/projects/dgap/4.png',
-      'assets/images/projects/dgap/5.png',
+      'assets/images/projects/dgap/1.jpg',
+      'assets/images/projects/dgap/2.jpg',
+      'assets/images/projects/dgap/3.jpg',
+      'assets/images/projects/dgap/4.jpg',
+      'assets/images/projects/dgap/5.jpg',
     ],
     download: [
       {
