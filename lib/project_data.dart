@@ -59,27 +59,48 @@ We are committed to helping everyone in the world find their path to success qui
     end: '06/2024',
   ),
   AppProject(
-    id: '3',
-    name: 'PVFans',
-    slug: 'pvfans',
+    id: '2',
+    name: 'Vibogram',
+    slug: 'vibogram',
     platforms: [
       'Android',
       'iOS',
     ],
-    iconPath: 'assets/images/projects/pvicon.png',
+    iconPath: 'assets/images/projects/vibogramicon.png',
     techs: {
-      'flutter': 'Flutter',
-      'Firebase': 'Firebase',
+      'Flutter': 'Flutter',
+      'djangorest': 'Django Rest Framework',
+      'postgres': 'PostgreSQL',
+      'Azure': 'Azure',
     },
     about: 'Social Media, Dating and Market Place Application',
     introduction: 'Social Media, Dating and Market Place Application',
     start: '09/2023',
     end: 'Present',
-    imageList: [],
-    download: [],
+    imageList: [
+      'assets/images/projects/vibogram/1.png',
+      'assets/images/projects/vibogram/2.png',
+      'assets/images/projects/vibogram/3.png',
+      'assets/images/projects/vibogram/4.png',
+      'assets/images/projects/vibogram/5.png',
+      'assets/images/projects/vibogram/6.png',
+    ],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=ca.vibogram.vibogram',
+      },
+      {
+        'slug': 'appstore',
+        'name': 'App Store',
+        'link': 'https://apps.apple.com/sa/app/vibogram/id6553969414',
+      },
+    ],
   ),
   AppProject(
-    id: '2',
+    id: '3',
     name: 'Daric',
     slug: 'daric',
     platforms: [
@@ -95,8 +116,26 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'Exchange Application',
     start: '06/2023',
     end: 'Present',
-    imageList: [],
-    download: [],
+    imageList: [
+      'assets/images/projects/daric/1.png',
+      'assets/images/projects/daric/2.png',
+      'assets/images/projects/daric/3.png',
+      'assets/images/projects/daric/4.png',
+      'assets/images/projects/daric/5.png',
+    ],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=ca.daricexchange.daric',
+      },
+      {
+        'slug': 'appstore',
+        'name': 'App Store',
+        'link': 'https://apps.apple.com/bf/app/daric/id6460134118',
+      },
+    ],
   ),
   AppProject(
     id: '4',
@@ -116,8 +155,37 @@ We are committed to helping everyone in the world find their path to success qui
     about: 'User & Driver Application for Inter-city Transportation',
     introduction: 'User & Driver Application for Inter-city Transportation',
     start: '06/2023',
-    imageList: [],
-    download: [],
+    imageList: [
+      'assets/images/projects/novintaxi/1.png',
+      'assets/images/projects/novintaxi/2.png',
+      'assets/images/projects/novintaxi/3.png',
+      'assets/images/projects/novintaxi/4.png',
+      'assets/images/projects/novintaxi/5.png',
+      'assets/images/projects/novintaxi/6.png',
+      'assets/images/projects/novintaxi/7.png',
+    ],
+    download: [
+      {
+        'slug': 'bazaar',
+        'name': 'Bazaar',
+        'link': 'https://cafebazaar.ir/app/com.pishranesh.novintaxi',
+      },
+      {
+        'slug': 'sibapp',
+        'name': 'SibApp',
+        'link': 'https://sibapp.com/applications/NovinTaxi?from=search',
+      },
+      {
+        'slug': 'anardooni',
+        'name': 'Anardooni',
+        'link': 'https://anardoni.com/ios/app/compishraneshnovintaxi',
+      },
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://novintaxi.com/',
+      },
+    ],
     end: '12/2023',
   ),
   AppProject(
@@ -140,8 +208,36 @@ We are committed to helping everyone in the world find their path to success qui
     introduction:
         'Social Media introduction Motivation and Coaching, Applications and WebApp',
     start: '06/2022',
-    imageList: [],
-    download: [],
+    imageList: [
+      'assets/images/projects/secrettv/1.jpeg',
+      'assets/images/projects/secrettv/2.jpeg',
+      'assets/images/projects/secrettv/3.jpeg',
+      'assets/images/projects/secrettv/4.jpeg',
+      'assets/images/projects/secrettv/5.jpeg',
+    ],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=com.pishranesh.secrettv',
+      },
+      {
+        'slug': 'sibapp',
+        'name': 'SibApp',
+        'link': 'https://sibapp.com/applications/SecretTV?from=search',
+      },
+      {
+        'slug': 'anardooni',
+        'name': 'Anardooni',
+        'link': 'https://anardoni.com/ios/app/compishraneshsecrettv',
+      },
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://secret-tv.com/',
+      },
+    ],
     end: '09/2022',
   ),
   AppProject(
@@ -163,29 +259,70 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'E-Learning Cross-Platform Applications and WebApp',
     start: '12/2021',
     end: '05/2022',
-    imageList: [],
-    download: [],
-  ),
-  AppProject(
-    id: '7',
-    name: 'JooPeg',
-    slug: 'joopeg',
-    platforms: [
-      'Android',
-      'iOS',
+    imageList: [
+      'assets/images/projects/shakiblearn/1.jpeg',
+      'assets/images/projects/shakiblearn/2.jpeg',
+      'assets/images/projects/shakiblearn/3.png',
+      'assets/images/projects/shakiblearn/4.jpeg',
+      'assets/images/projects/shakiblearn/5.jpeg',
+      'assets/images/projects/shakiblearn/6.png',
     ],
-    iconPath: 'assets/images/projects/joopegicon.png',
-    techs: {
-      'flutter': 'Flutter',
-      'Firebase': 'Firebase',
-    },
-    about: 'Social Media Application',
-    introduction: 'Social Media Application',
-    start: '4/2023',
-    end: 'Present',
-    imageList: [],
-    download: [],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=com.pishranesh.shakiblearn',
+      },
+      {
+        'slug': 'sibapp',
+        'name': 'SibApp',
+        'link': 'https://sibapp.com/applications/ShakibLearn?from=search',
+      },
+      {
+        'slug': 'anardooni',
+        'name': 'Anardooni',
+        'link': 'https://anardoni.com/ios/app/compishraneshshakiblearn',
+      },
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://shakiblearn.com/',
+      },
+    ],
   ),
+  // AppProject(
+  //   id: '7',
+  //   name: 'JooPeg',
+  //   slug: 'joopeg',
+  //   platforms: [
+  //     'Android',
+  //     'iOS',
+  //   ],
+  //   iconPath: 'assets/images/projects/joopegicon.png',
+  //   techs: {
+  //     'flutter': 'Flutter',
+  //     'Firebase': 'Firebase',
+  //   },
+  //   about: 'Social Media Application',
+  //   introduction: 'Social Media Application',
+  //   start: '4/2023',
+  //   end: 'Present',
+  //   imageList: [],
+  //   download: [
+  //     {
+  //       'slug': 'googleplay',
+  //       'name': 'Google Play',
+  //       'link':
+  //           'https://play.google.com/store/apps/details?id=com.joopeg.joopeg',
+  //     },
+  //     {
+  //       'slug': 'appstore',
+  //       'name': 'App Store',
+  //       'link': 'https://apps.apple.com/us/app/joopeg/id1642271839',
+  //     },
+  //   ],
+  // ),
   AppProject(
     id: '11',
     name: 'Sudus',
@@ -203,7 +340,13 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'Cryptocurrency and Copy-Trading Platform',
     start: '03/2020',
     end: '9/2020',
-    imageList: [],
+    imageList: [
+      'assets/images/projects/sudus/1.png',
+      'assets/images/projects/sudus/2.png',
+      'assets/images/projects/sudus/3.png',
+      'assets/images/projects/sudus/4.png',
+      'assets/images/projects/sudus/5.png',
+    ],
     download: [],
   ),
   AppProject(
@@ -221,7 +364,13 @@ We are committed to helping everyone in the world find their path to success qui
     introduction: 'OCR (Image to Text) Application',
     start: '07/2023',
     end: '09/2023',
-    imageList: [],
+    imageList: [
+      'assets/images/projects/behnasr/1.png',
+      'assets/images/projects/behnasr/2.png',
+      'assets/images/projects/behnasr/3.png',
+      'assets/images/projects/behnasr/4.png',
+      'assets/images/projects/behnasr/5.png',
+    ],
     download: [],
   ),
   AppProject(

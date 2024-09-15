@@ -385,6 +385,10 @@ class MyHomePageState extends State<MyHomePage> {
                         image: "assets/images/skills/fastapi.png",
                       ),
                       SkillCompact(
+                        skill: "Azure",
+                        image: "assets/images/skills/azure.png",
+                      ),
+                      SkillCompact(
                         skill: "NGINX",
                         image: "assets/images/skills/nginx.png",
                       ),
