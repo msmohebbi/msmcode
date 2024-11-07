@@ -17,7 +17,11 @@ var allProjects = [
       'Azure': 'Azure',
     },
     about: 'Social Media, Dating and Market Place Application',
-    introduction: 'Social Media, Dating and Market Place Application',
+    introduction: '''
+Global social media with market place, job seeker and dating.
+Explore new friends, make connections, chat with them and have a good time.
+Android & IOS app base on Flutter & Django & Azure cloud.
+''',
     start: '09/2023',
     end: 'Present',
     imageList: [
@@ -114,8 +118,8 @@ We are committed to helping everyone in the world find their path to success qui
     },
     about: 'Exchange Application',
     introduction: 'Exchange Application',
-    start: '06/2023',
-    end: 'Present',
+    start: '05/2023',
+    end: '10/2023',
     imageList: [
       'assets/images/projects/daric/1.jpg',
       'assets/images/projects/daric/2.jpg',
@@ -190,58 +194,6 @@ We are committed to helping everyone in the world find their path to success qui
   ),
   AppProject(
     id: '5',
-    name: 'Secret TV',
-    slug: 'secret_tv',
-    platforms: [
-      'Android',
-      'iOS',
-      'Web',
-    ],
-    iconPath: 'assets/images/projects/secrettvicon.png',
-    techs: {
-      'flutter': 'Flutter',
-      'djangorest': 'Django Rest Framework',
-      'postgres': 'PostgreSQL',
-    },
-    about:
-        'Social Media about Motivation and Coaching, Applications and WebApp',
-    introduction:
-        'Social Media introduction Motivation and Coaching, Applications and WebApp',
-    start: '06/2022',
-    imageList: [
-      'assets/images/projects/secrettv/1.jpg',
-      'assets/images/projects/secrettv/2.jpg',
-      'assets/images/projects/secrettv/3.jpg',
-      'assets/images/projects/secrettv/4.jpg',
-      'assets/images/projects/secrettv/5.jpg',
-    ],
-    download: [
-      {
-        'slug': 'googleplay',
-        'name': 'Google Play',
-        'link':
-            'https://play.google.com/store/apps/details?id=com.pishranesh.secrettv',
-      },
-      {
-        'slug': 'sibapp',
-        'name': 'SibApp',
-        'link': 'https://sibapp.com/applications/SecretTV?from=search',
-      },
-      {
-        'slug': 'anardooni',
-        'name': 'Anardooni',
-        'link': 'https://anardoni.com/ios/app/compishraneshsecrettv',
-      },
-      {
-        'slug': 'pwa',
-        'name': 'PWA',
-        'link': 'https://secret-tv.com/',
-      },
-    ],
-    end: '09/2022',
-  ),
-  AppProject(
-    id: '6',
     name: 'Shakib Learn',
     slug: 'shakib_learn',
     platforms: [
@@ -257,8 +209,8 @@ We are committed to helping everyone in the world find their path to success qui
     },
     about: 'E-Learning Cross-Platform Applications and WebApp',
     introduction: 'E-Learning Cross-Platform Applications and WebApp',
-    start: '12/2021',
-    end: '05/2022',
+    start: '09/2021',
+    end: '01/2022',
     imageList: [
       'assets/images/projects/shakiblearn/1.jpg',
       'assets/images/projects/shakiblearn/2.jpg',
@@ -291,6 +243,59 @@ We are committed to helping everyone in the world find their path to success qui
       },
     ],
   ),
+  AppProject(
+    id: '6',
+    name: 'Secret TV',
+    slug: 'secret_tv',
+    platforms: [
+      'Android',
+      'iOS',
+      'Web',
+    ],
+    iconPath: 'assets/images/projects/secrettvicon.png',
+    techs: {
+      'flutter': 'Flutter',
+      'djangorest': 'Django Rest Framework',
+      'postgres': 'PostgreSQL',
+    },
+    about:
+        'Social Media about Motivation and Coaching, Applications and WebApp',
+    introduction:
+        'Social Media introduction Motivation and Coaching, Applications and WebApp',
+    start: '02/2022',
+    imageList: [
+      'assets/images/projects/secrettv/1.jpg',
+      'assets/images/projects/secrettv/2.jpg',
+      'assets/images/projects/secrettv/3.jpg',
+      'assets/images/projects/secrettv/4.jpg',
+      'assets/images/projects/secrettv/5.jpg',
+    ],
+    download: [
+      {
+        'slug': 'googleplay',
+        'name': 'Google Play',
+        'link':
+            'https://play.google.com/store/apps/details?id=com.pishranesh.secrettv',
+      },
+      {
+        'slug': 'sibapp',
+        'name': 'SibApp',
+        'link': 'https://sibapp.com/applications/SecretTV?from=search',
+      },
+      {
+        'slug': 'anardooni',
+        'name': 'Anardooni',
+        'link': 'https://anardoni.com/ios/app/compishraneshsecrettv',
+      },
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://secret-tv.com/',
+      },
+    ],
+    end: '05/2022',
+  ),
+
   // AppProject(
   //   id: '7',
   //   name: 'JooPeg',

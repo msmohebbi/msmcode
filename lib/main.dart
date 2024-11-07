@@ -329,6 +329,31 @@ class MyHomePageState extends State<MyHomePage> {
                 const SizedBox(
                   height: kToolbarHeight * 0.2,
                 ),
+                Material(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Theme.of(context).colorScheme.primary,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(12),
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse('/assets/resume/MOHAMMAD SAEID MOHEBBI.pdf'),
+                      );
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(kToolbarHeight * 0.2),
+                      child: Text(
+                        'Download PDF Resume',
+                        style: TextStyle(
+                          fontSize: fontDelta + 13,
+                          color: Theme.of(context).colorScheme.onPrimary,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: kToolbarHeight * 0.3,
+                ),
                 Container(
                   width: widthPix,
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
