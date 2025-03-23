@@ -3,13 +3,13 @@ import 'package:msmcode/project_model.dart';
 var allProjects = [
   AppProject(
     id: '1',
-    name: 'Vibogram',
-    slug: 'vibogram',
+    name: 'Vibonet',
+    slug: 'vibonet',
     platforms: [
       'Android',
       'iOS',
     ],
-    iconPath: 'assets/images/projects/vibogramicon.png',
+    iconPath: 'assets/images/projects/vibonet_icon.png',
     techs: {
       'Flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
@@ -25,24 +25,24 @@ Android & IOS app base on Flutter & Django & Azure cloud.
     start: '09/2023',
     end: 'Present',
     imageList: [
-      'assets/images/projects/vibogram/1.jpg',
-      'assets/images/projects/vibogram/2.jpg',
-      'assets/images/projects/vibogram/3.jpg',
-      'assets/images/projects/vibogram/4.jpg',
-      'assets/images/projects/vibogram/5.jpg',
-      'assets/images/projects/vibogram/6.jpg',
+      'assets/images/projects/vibonet/1.jpg',
+      'assets/images/projects/vibonet/2.jpg',
+      'assets/images/projects/vibonet/3.jpg',
+      'assets/images/projects/vibonet/4.jpg',
+      'assets/images/projects/vibonet/5.jpg',
+      'assets/images/projects/vibonet/6.jpg',
     ],
     download: [
       {
         'slug': 'googleplay',
         'name': 'Google Play',
         'link':
-            'https://play.google.com/store/apps/details?id=ca.vibogram.vibogram',
+            'https://play.google.com/store/apps/details?id=com.vibonet.android',
       },
       {
         'slug': 'appstore',
         'name': 'App Store',
-        'link': 'https://apps.apple.com/sa/app/vibogram/id6553969414',
+        'link': 'https://apps.apple.com/us/app/vibonet/id6739668045',
       },
     ],
   ),
@@ -55,7 +55,7 @@ Android & IOS app base on Flutter & Django & Azure cloud.
       'iOS',
       'Web',
     ],
-    iconPath: 'assets/images/projects/unidooniicon.png',
+    iconPath: 'assets/images/projects/unidooni_icon.png',
     techs: {
       'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
@@ -111,7 +111,7 @@ We are committed to helping everyone in the world find their path to success qui
       'Android',
       'iOS',
     ],
-    iconPath: 'assets/images/projects/daricicon.png',
+    iconPath: 'assets/images/projects/daric_icon.png',
     techs: {
       'flutter': 'Flutter',
       'Firebase': 'Firebase',
@@ -141,57 +141,59 @@ We are committed to helping everyone in the world find their path to success qui
       },
     ],
   ),
+
   AppProject(
     id: '4',
-    name: 'Novin Taxi',
-    slug: 'novin_taxi',
+    name: 'In Jadeh',
+    slug: 'injadeh',
     platforms: [
       'Android',
       'iOS',
       'Web',
     ],
-    iconPath: 'assets/images/projects/novintaxiicon.png',
+    iconPath: 'assets/images/projects/injadeh_icon.png',
     techs: {
       'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
       'postgres': 'PostgreSQL',
     },
-    about: 'User & Driver Application for Inter-city Transportation',
-    introduction: 'User & Driver Application for Inter-city Transportation',
-    start: '06/2023',
+    about: 'Vehicle Repair Application',
+    introduction:
+        'An app for heavy vehicle owners to find trusted mechanics, request repairs, and track services easily',
+    start: '01/2024',
+    end: '05/2024',
     imageList: [
-      'assets/images/projects/novintaxi/1.jpg',
-      'assets/images/projects/novintaxi/2.jpg',
-      'assets/images/projects/novintaxi/3.jpg',
-      'assets/images/projects/novintaxi/4.jpg',
-      'assets/images/projects/novintaxi/5.jpg',
-      'assets/images/projects/novintaxi/6.jpg',
-      'assets/images/projects/novintaxi/7.jpg',
+      'assets/images/projects/injadeh/1.jpg',
+      'assets/images/projects/injadeh/2.jpg',
+      'assets/images/projects/injadeh/3.jpg',
+      'assets/images/projects/injadeh/4.jpg',
+      'assets/images/projects/injadeh/5.jpg',
+      'assets/images/projects/injadeh/6.jpg',
     ],
     download: [
       {
         'slug': 'bazaar',
         'name': 'Bazaar',
-        'link': 'https://cafebazaar.ir/app/com.pishranesh.novintaxi',
+        'link': 'https://cafebazaar.ir/app/com.pishranesh.injadeh',
       },
-      {
-        'slug': 'sibapp',
-        'name': 'SibApp',
-        'link': 'https://sibapp.com/applications/NovinTaxi?from=search',
-      },
-      {
-        'slug': 'anardooni',
-        'name': 'Anardooni',
-        'link': 'https://anardoni.com/ios/app/compishraneshnovintaxi',
-      },
+      // {
+      //   'slug': 'sibapp',
+      //   'name': 'SibApp',
+      //   'link': 'https://sibapp.com/applications/NovinTaxi?from=search',
+      // },
+      // {
+      //   'slug': 'anardooni',
+      //   'name': 'Anardooni',
+      //   'link': 'https://anardoni.com/ios/app/compishraneshnovintaxi',
+      // },
       {
         'slug': 'pwa',
         'name': 'PWA',
-        'link': 'https://novintaxi.com/',
+        'link': 'https://injadeh.ir/',
       },
     ],
-    end: '12/2023',
   ),
+
   AppProject(
     id: '5',
     name: 'Shakib Learn',
@@ -201,7 +203,7 @@ We are committed to helping everyone in the world find their path to success qui
       'iOS',
       'Web',
     ],
-    iconPath: 'assets/images/projects/shakiblearnicon.png',
+    iconPath: 'assets/images/projects/shakiblearn_icon.png',
     techs: {
       'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
@@ -245,6 +247,57 @@ We are committed to helping everyone in the world find their path to success qui
   ),
   AppProject(
     id: '6',
+    name: 'Novin Taxi',
+    slug: 'novin_taxi',
+    platforms: [
+      'Android',
+      'iOS',
+      'Web',
+    ],
+    iconPath: 'assets/images/projects/novintaxi_icon.png',
+    techs: {
+      'flutter': 'Flutter',
+      'djangorest': 'Django Rest Framework',
+      'postgres': 'PostgreSQL',
+    },
+    about: 'User & Driver Application for Inter-city Transportation',
+    introduction: 'User & Driver Application for Inter-city Transportation',
+    start: '06/2023',
+    imageList: [
+      'assets/images/projects/novintaxi/1.jpg',
+      'assets/images/projects/novintaxi/2.jpg',
+      'assets/images/projects/novintaxi/3.jpg',
+      'assets/images/projects/novintaxi/4.jpg',
+      'assets/images/projects/novintaxi/5.jpg',
+      'assets/images/projects/novintaxi/6.jpg',
+      'assets/images/projects/novintaxi/7.jpg',
+    ],
+    download: [
+      {
+        'slug': 'bazaar',
+        'name': 'Bazaar',
+        'link': 'https://cafebazaar.ir/app/com.pishranesh.novintaxi',
+      },
+      {
+        'slug': 'sibapp',
+        'name': 'SibApp',
+        'link': 'https://sibapp.com/applications/NovinTaxi?from=search',
+      },
+      {
+        'slug': 'anardooni',
+        'name': 'Anardooni',
+        'link': 'https://anardoni.com/ios/app/compishraneshnovintaxi',
+      },
+      {
+        'slug': 'pwa',
+        'name': 'PWA',
+        'link': 'https://novintaxi.com/',
+      },
+    ],
+    end: '12/2023',
+  ),
+  AppProject(
+    id: '7',
     name: 'Secret TV',
     slug: 'secret_tv',
     platforms: [
@@ -252,7 +305,7 @@ We are committed to helping everyone in the world find their path to success qui
       'iOS',
       'Web',
     ],
-    iconPath: 'assets/images/projects/secrettvicon.png',
+    iconPath: 'assets/images/projects/secrettv_icon.png',
     techs: {
       'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
@@ -304,7 +357,7 @@ We are committed to helping everyone in the world find their path to success qui
   //     'Android',
   //     'iOS',
   //   ],
-  //   iconPath: 'assets/images/projects/joopegicon.png',
+  //   iconPath: 'assets/images/projects/joopeg_icon.png',
   //   techs: {
   //     'flutter': 'Flutter',
   //     'Firebase': 'Firebase',
@@ -329,14 +382,14 @@ We are committed to helping everyone in the world find their path to success qui
   //   ],
   // ),
   AppProject(
-    id: '11',
+    id: '8',
     name: 'Sudus',
     slug: 'sudus',
     platforms: [
       'Android',
       'iOS',
     ],
-    iconPath: 'assets/images/projects/sudus.png',
+    iconPath: 'assets/images/projects/sudus_icon.png',
     techs: {
       'flutter': 'Flutter',
       'Firebase': 'Firebase',
@@ -355,13 +408,13 @@ We are committed to helping everyone in the world find their path to success qui
     download: [],
   ),
   AppProject(
-    id: '8',
+    id: '9',
     name: 'Behnasr',
     slug: 'behnasr',
     platforms: [
       'Android',
     ],
-    iconPath: 'assets/images/projects/behnasricon.png',
+    iconPath: 'assets/images/projects/behnasr_icon.png',
     techs: {
       'flutter': 'Flutter',
     },
@@ -388,7 +441,7 @@ We are committed to helping everyone in the world find their path to success qui
   //     'iOS',
   //     'Web',
   //   ],
-  //   iconPath: 'assets/images/projects/delificon.png',
+  //   iconPath: 'assets/images/projects/delif_icon.png',
   //   techs: {
   //     'flutter': 'Flutter',
   //     'djangorest': 'Django Rest Framework',
@@ -402,13 +455,13 @@ We are committed to helping everyone in the world find their path to success qui
   //   download: [],
   // ),
   AppProject(
-    id: '12',
+    id: '11',
     name: 'Dr Mohsen Valizadeh',
     slug: 'dr_mohsen_valizadeh',
     platforms: [
       'Web',
     ],
-    iconPath: 'assets/images/projects/drmvicon.png',
+    iconPath: 'assets/images/projects/drmv_icon.png',
     techs: {
       'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
@@ -429,13 +482,13 @@ We are committed to helping everyone in the world find their path to success qui
     ],
   ),
   AppProject(
-    id: '9',
+    id: '12',
     name: 'Sorena',
     slug: 'sorena',
     platforms: [
       'Android',
     ],
-    iconPath: 'assets/images/projects/sorenaicon.png',
+    iconPath: 'assets/images/projects/sorena_icon.png',
     techs: {
       'flutter': 'Flutter',
     },
@@ -457,7 +510,7 @@ We are committed to helping everyone in the world find their path to success qui
     platforms: [
       'Web',
     ],
-    iconPath: 'assets/images/projects/dgapicon.png',
+    iconPath: 'assets/images/projects/dgap_icon.png',
     techs: {
       'django': 'Django',
       'postgres': 'Postgresql',

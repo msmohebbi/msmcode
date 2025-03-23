@@ -358,7 +358,7 @@ class MyHomePageState extends State<MyHomePage> {
                   width: widthPix,
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: Text(
-                    "A passionate Full-Stack Developer with 4.5+ years experience in Web & Backend developement using Django and 3.5+ years experience in cross platform developement using Flutter, enjoy learning new techs to solve people's problems and create awesome products and make it a better world with the help of technology.",
+                    "A passionate Full-Stack Developer with 5+ years experience in Web & Backend developement using Django and 4+ years experience in cross platform developement using Flutter, enjoy learning new techs to solve people's problems and create awesome products and make it a better world with the help of technology.",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       height: 2,
@@ -456,7 +456,7 @@ class MyHomePageState extends State<MyHomePage> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                   child: Text(
-                    'PROJECTS (11)',
+                    'PROJECTS (12)',
                     textAlign: TextAlign.center,
                     softWrap: false,
                     overflow: TextOverflow.visible,
