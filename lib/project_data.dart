@@ -11,10 +11,10 @@ var allProjects = [
     ],
     iconPath: 'assets/images/projects/vibonet_icon.png',
     techs: {
-      'Flutter': 'Flutter',
+      'flutter': 'Flutter',
       'djangorest': 'Django Rest Framework',
       'postgres': 'PostgreSQL',
-      'Azure': 'Azure',
+      'azure': 'Azure',
     },
     about: 'Social Media, Dating and Market Place Application',
     introduction: '''
@@ -114,7 +114,7 @@ We are committed to helping everyone in the world find their path to success qui
     iconPath: 'assets/images/projects/daric_icon.png',
     techs: {
       'flutter': 'Flutter',
-      'Firebase': 'Firebase',
+      'firebase': 'Firebase',
     },
     about: 'Exchange Application',
     introduction: 'Exchange Application',
@@ -360,7 +360,7 @@ We are committed to helping everyone in the world find their path to success qui
   //   iconPath: 'assets/images/projects/joopeg_icon.png',
   //   techs: {
   //     'flutter': 'Flutter',
-  //     'Firebase': 'Firebase',
+  //     'firebase': 'Firebase',
   //   },
   //   about: 'Social Media Application',
   //   introduction: 'Social Media Application',
@@ -392,7 +392,7 @@ We are committed to helping everyone in the world find their path to success qui
     iconPath: 'assets/images/projects/sudus_icon.png',
     techs: {
       'flutter': 'Flutter',
-      'Firebase': 'Firebase',
+      'firebase': 'Firebase',
     },
     about: 'Cryptocurrency and Copy-Trading Platform',
     introduction: 'Cryptocurrency and Copy-Trading Platform',
